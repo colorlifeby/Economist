@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal|center"
+    android:background="@drawable/calc_surface"
+    android:padding="3dp" >
+
+<HorizontalScrollView
+    android:id="@+id/calcfullHSV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/calcItogBT"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="2dp"
+    android:fillViewport="true" >
+    
+    <TextView
+        android:id="@+id/calcFullResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calc_result_field"
+        android:gravity="right|center_vertical"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="258215.56+35699.1="
+        android:textColor="@color/calc_rusult_color"
+        android:textSize="@dimen/calcFullResultTextSize"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText" />
+</HorizontalScrollView>
+
+<HorizontalScrollView
+    android:id="@+id/calcHSV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginBottom="2dp"
+    
+    android:layout_alignParentLeft="true"
+    android:layout_alignRight="@id/calcfullHSV"
+    android:layout_below="@id/calcfullHSV"
+    android:fillViewport="true" >
+    <TextView
+        android:id="@+id/calcResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calc_result_field"
+        android:gravity="right|center_vertical"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="444444444444"
+        android:textColor="@color/calc_rusult_color"
+        android:textSize="@dimen/calcResultTextSize"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+</HorizontalScrollView>
+    <Button
+        android:id="@+id/calcACBT"
+        style="@style/calcButton.AC"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/calcHSV"
+        android:layout_toRightOf="@id/calc9BT"
+        android:onClick="onClick"
+        android:text="AC"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calcBSBT"
+        style="@style/calcButton.Act"
+        android:layout_below="@+id/calcHSV"
+        android:layout_toRightOf="@id/calcACBT"
+        android:background="@drawable/calc_btn_act"
+        android:onClick="onClick"
+        android:text="←"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calcSignBT"
+        style="@style/calcButton.Act"
+        android:layout_below="@+id/calcHSV"
+        android:layout_toRightOf="@id/calcBSBT"
+        android:background="@drawable/calc_btn_act"
+        android:onClick="onClick"
+        android:text="±"
+        tools:ignore="HardcodedText" />
+    
+    <Button
+        android:id="@+id/calcUmnBT"
+        style="@style/calcButton.Act"
+        android:layout_below="@id/calcACBT"
+        android:layout_toRightOf="@id/calc6BT"
+        android:background="@drawable/calc_btn_act"
+        android:onClick="onClick"
+        android:text="x"
+        tools:ignore="HardcodedText" />
+    
+    <Button
+        android:id="@+id/calcDelBT"
+        style="@style/calcButton.Act"
+        android:layout_below="@id/calcBSBT"
+        android:layout_toRightOf="@id/calcUmnBT"
+        android:background="@drawable/calc_btn_act"
+        android:onClick="onClick"
+        android:text="÷"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc7BT"
+        style="@style/calcButton.Num"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/calcHSV"
+        android:onClick="onClick"
+        android:text="7"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc8BT"
+        style="@style/calcButton.Num"
+        android:layout_below="@id/calcHSV"
+        android:layout_toRightOf="@id/calc7BT"
+        android:onClick="onClick"
+        android:text="8"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc9BT"
+        style="@style/calcButton.Num"
+        android:layout_below="@id/calcHSV"
+        android:layout_toRightOf="@id/calc8BT"
+        android:onClick="onClick"
+        android:text="9"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc4BT"
+        style="@style/calcButton.Num"        
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/calc7BT"
+        android:onClick="onClick"
+        android:text="4"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc5BT"
+        style="@style/calcButton.Num"        
+        android:layout_below="@id/calc8BT"
+        android:layout_toRightOf="@id/calc4BT"
+        android:onClick="onClick"
+        android:text="5"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc6BT"
+        style="@style/calcButton.Num"        
+        android:layout_below="@id/calc9BT"
+        android:layout_toRightOf="@id/calc5BT"
+        android:onClick="onClick"
+        android:text="6"
+        tools:ignore="HardcodedText" />
+    
+    <Button
+        android:id="@+id/calcPlusBT"
+        style="@style/calcButton.Act"
+        android:layout_below="@id/calcUmnBT"
+        android:layout_toRightOf="@id/calc3BT"
+        android:background="@drawable/calc_btn_act"
+        android:onClick="onClick"
+        android:text="+"
+        tools:ignore="HardcodedText" />
+    
+    <Button
+        android:id="@+id/calcMinusBT"
+        style="@style/calcButton.Act"
+        android:layout_below="@id/calcDelBT"
+        android:layout_toRightOf="@id/calcPlusBT"
+        android:background="@drawable/calc_btn_act"
+        android:onClick="onClick"
+        android:text="-"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc1BT"
+        style="@style/calcButton.Num"        
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/calc4BT"
+        android:onClick="onClick"
+        android:text="1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc2BT"
+        style="@style/calcButton.Num"        
+        android:layout_below="@id/calc5BT"
+        android:layout_toRightOf="@id/calc1BT"
+        android:onClick="onClick"
+        android:text="2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc3BT"
+        style="@style/calcButton.Num"        
+        android:layout_below="@id/calc6BT"
+        android:layout_toRightOf="@id/calc2BT"
+        android:onClick="onClick"
+        android:text="3"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/calcDotBT"
+        style="@style/calcButton.Num"        
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/calc1BT"
+        android:onClick="onClick"
+        android:text=","
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calc0BT"
+        style="@style/calcButton.Num"        
+        android:layout_below="@id/calc2BT"
+        android:layout_toRightOf="@id/calcDotBT"
+        android:onClick="onClick"
+        android:text="0"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calcItogBT"
+        style="@style/calcButton.Enter"
+        android:layout_alignBottom="@id/calcMinusBT"
+        android:layout_below="@id/calcSignBT"
+        android:layout_toRightOf="@id/calcDelBT"
+        android:background="@drawable/calc_btn_act"
+        android:onClick="onClick"
+        android:text="="
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/calcSetBT"
+        style="@style/calcButton.Enter"
+        android:layout_alignRight="@id/calcSignBT"
+        android:layout_below="@id/calc3BT"
+        android:layout_toRightOf="@id/calc0BT"
+        android:onClick="onSetClick"
+        android:text="@string/calc_setbutton" />
+    
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calc_bg_color">#0F1F1F1F</color>
+    <color name="calc_surface_color">#414550</color>
+    <color name="calc_btn_text_color">#FFFFFF</color>  
+
+    <color name="calc_result_bgcolor">#A1B2C2</color>
+    <color name="calc_rusult_color">#2F2F4F</color>
+    
+    <color name="calc_btn_ac_normal">#FF8C55</color>
+    <color name="calc_btn_ac_pressed">#FFBC53</color>
+    <color name="calc_btn_ac_stroke">#CE5803</color>
+    
+    <color name="calc_btn_num_normal">#9CA3B5</color>
+    <color name="calc_btn_num_pressed">#D4D4D4</color>
+    <color name="calc_btn_num_stroke">#858585</color>
+    
+    <color name="calc_btn_act_normal">#64666D</color>
+    <color name="calc_btn_act_pressed">#D4D4D4</color>
+    <color name="calc_btn_act_stroke">#858585</color>
+    
+    <color name="acc_balans_frame_color">#D4D4D4</color>
+    <color name="acc_balans_bgcolor">#151515</color>
+    
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- Размеры калькулятора в портретном режиме -->
+	<dimen name="calcMinBtnHieght">36dp</dimen>	    
+	<dimen name="calcMinBtnWidth">42dp</dimen>
+	<dimen name="calcButtonTextSize">18sp</dimen>
+	<dimen name="calcResultTextSize">26sp</dimen>
+	<dimen name="calcFullResultTextSize">12sp</dimen>
+	
+    <!-- Список счетов -->
+    <dimen name="accBalansLabelTextSize">14sp</dimen>
+    <dimen name="accBalansTextSize">16sp</dimen>	
+    
+</resources>

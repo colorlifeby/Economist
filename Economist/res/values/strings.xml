@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Экономист</string>
+    <string name="action_settings">Settings</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    
+    <string name="currency_flag">flag</string>
+    <string name="currency_name">Наименование валюты</string>
+    <string name="currency_shortname">Краткое обозначение (символ) валюты</string>
+    <string name="currency_showshortname">Отображать символ валюты</string>
+    <string name="currency_shortnamebefore">Cимвол валюты перед суммой</string>
+    <string name="currency_shortnamespace">Пробел между символом валюты и суммой</string>
+    <string name="currency_delimiter">Разделитель разрядов</string>
+    <string name="currency_iso">Код валюты (ISO 4217)</string>
+    <string name="currency_numiso">Цифровой код валюты</string>
+    <string name="currency_decimal">Дробная часть:</string>
+    <string name="currency_default">Основная валюта</string>
+    <string name="currency_saverequest">Сохранить изменения?</string>
+    <string name="currency_wrongfield">Поле %1$s не может быть пустым</string>
+    <string name="currency_examplecaption">пример отображения</string>
+    <string name="currency_set_defaut">Сделать валюту основной</string>
+    <string name="currency_rate_button">Курсы валют</string>
+    <string name="currency_defaut_not_selected">Не выбрана основная валюта!</string>
+    <string name="currency_example_data">3126578.4271</string>
+    
+   	<string name="calc_setbutton">Внести</string>
+   	
+   	<string name="acc_balans">Баланс</string>
+</resources>
